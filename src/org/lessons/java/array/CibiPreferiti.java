@@ -6,7 +6,7 @@ public class CibiPreferiti {
 		
 		//Initializing array
 		// String[] topFood = {"carbonara","kebab","pad thai","big mac","bbq ribs","chips","pop corn",}
-		String[] topFood = new String[8];
+		String[] topFood = new String[7];
 		
 		// adding values to array (string[n-1]):
 		topFood[0]= "Pad Thai";
@@ -16,7 +16,7 @@ public class CibiPreferiti {
 		topFood[4]= "Papaya Salad";
 		topFood[5]= "Kebab";
 		topFood[6]= "Pop Corn";
-		topFood[7]= "Big Mac";
+//		topFood[7]= "Big Mac";
 		
 		 // stamp lenght of array
         System.out.println("Lunghezza della classifica: " + topFood.length);
@@ -25,7 +25,23 @@ public class CibiPreferiti {
         System.out.println("Top position: " + topFood[0]);
         
         //stamp last position
-        System.out.println("Lasta position: " + (topFood.length-1));
+        System.out.println("Last position: " + topFood[topFood.length-1]);
+        
+        //BONUS
+        
+        int midlePosition = topFood.length / 2;
+        
+        if (topFood.length % 2 == 0) {
+            // even
+            System.out.println("Midle postition (even): " + topFood[midlePosition-1]);
+        } else {
+            // odd
+            System.out.println("Midle position (odd): " + topFood[midlePosition]);
+        }
+        
+        //(?)
+        
+        
         
 
 	}
